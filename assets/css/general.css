@@ -1,0 +1,54 @@
+/**
+@author: armando.joaquin
+22 oct 2020
+ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 100%;
+}
+
+.content form, .content #results {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.content form header {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content form .form-group {
+    overflow: hidden;
+}
+
+.content form .form-group label {
+    float: left;
+    width: 20%;
+}
+
+.content form .form-group input {
+    float: left;
+    width: 60%;
+}
+
+.content form .form-group button {
+    float: right;
+    width: 17%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table thead tr th, table tbody tr td {
+    border: 1px solid #ccc;
+    padding: 3px;
+}

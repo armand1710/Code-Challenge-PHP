@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Challenge PHP</title>
+    <link rel="stylesheet" href="assets/css/general.css" media="all" type="text/css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/api.js"></script>
+</head>
+<body>
+<div class="content">
+    <form method="post" onsubmit="API.search(this.keyword.value);return false;">
+        <header>Google 2.0</header>
+        <div class="form-group">
+            <label for="keyword">Keyword</label>
+            <input type="text" id="keyword" name="keyword" required placeholder="Enter a query">
+            <button type="submit">Search</button>
+        </div>
+    </form>
+    <table id="results" hidden>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>State</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+</body>
+</html>
