@@ -53,9 +53,7 @@ var API = (function () {
             var columns = [row.name, row.city, row.state];
             tableUtils.printRow(columns);
         }
-        if (object.length == 0) {
-            tableUtils.printRow(['No data found, try again'], 3);
-        }
+        tableUtils.printRow(['Total results: ' + object.length], 3);
     };
 
     /**
